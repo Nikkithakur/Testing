@@ -1,0 +1,27 @@
+package com.cg.testing;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test
+{
+
+	public static void main(String[] args) {
+		
+		WebDriver driver;
+		
+		/*setting path settings bygiving name and value,
+		 if it doesn't work out 
+		 set path under environment variable as system or user variable*/
+		System.setProperty("webdriver.chrome.driver", "D:\\Users\\tnikhilp\\Desktop\\selenium\\chromedriver.exe");
+		
+		driver=new ChromeDriver();// object for ChromeDriver class
+		
+		driver.get("http://www.javatpoint.com");
+		
+		System.out.println("Successfully opened website");
+		
+		driver.quit();// browser will close immediately
+		
+	}
+}
