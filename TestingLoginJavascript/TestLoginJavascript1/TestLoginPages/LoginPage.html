@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+function validateForm() {
+   var x = document.forms["form1"]["email"].value;
+    var y=document.forms["form1"]["pswd"].value;
+    
+    if (x != "Nikhilprasadthakur@gmail.com")
+    {
+        alert("Invalid email");
+        return false;
+    }
+    
+    if(y!="Nikhil")
+    {
+    	alert("Invalid password");
+        return false;
+    }
+
+}
+</script>
+
+
+</head>
+<body bgcolor="MistyRose">
+<div align="center">
+<font size="5">Login Page</font>
+<form action="Success.html" name="form1" onsubmit="return validateForm()">
+<table >
+
+<tr><td>Email:</td><td> <input type="text" name="email" id="login_field"/> </td></tr>
+<tr><td>Password:</td><td> <input type="password" name="pswd" id="password"/> </td></tr>
+<tr><td> <input type="submit" name="submit" value="login"/> </td></tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>
